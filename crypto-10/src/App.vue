@@ -1,23 +1,26 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <LoginComp class="center" msg="Welcome to the crypto-wallet Aglo"/>
+  <LoginComponent class="center" msg="Welcome to AGLO"/>
+    <Modal v-show="showModal" />
   <h1>Here is a child component!</h1>
   <ButtonCounter />
-  <h2>Hola Cryptoteam!</h2>
+  <h2>The biggest Cryptoteam in ARG!</h2>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import LoginComp from './components/LoginComponent.vue'
+import LoginComponent from './components/LoginComponent.vue'
 import ButtonCounter from './components/ButtonCounter.vue'
 
 export default {
   name: 'App',
   components: {
-    LoginComp,
+    LoginComponent,
     ButtonCounter
-  }
+  },
+  computed: {
+}
 }
 </script>
 
